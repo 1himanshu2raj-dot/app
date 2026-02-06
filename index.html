@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="calculator" aria-label="Calculator">
+      <header class="calculator__header">
+        <div class="calculator__brand">Calc</div>
+        <div class="calculator__status" id="calc-status">Ready</div>
+      </header>
+      <section class="calculator__display" aria-live="polite">
+        <div class="calculator__history" id="calc-history">0</div>
+        <output class="calculator__output" id="calc-output">0</output>
+      </section>
+      <section class="calculator__keys" aria-label="Calculator keys">
+        <button class="key key--utility" data-action="clear">AC</button>
+        <button class="key key--utility" data-action="sign">±</button>
+        <button class="key key--utility" data-action="percent">%</button>
+        <button class="key key--operator" data-action="divide">÷</button>
+
+        <button class="key" data-action="digit">7</button>
+        <button class="key" data-action="digit">8</button>
+        <button class="key" data-action="digit">9</button>
+        <button class="key key--operator" data-action="multiply">×</button>
+
+        <button class="key" data-action="digit">4</button>
+        <button class="key" data-action="digit">5</button>
+        <button class="key" data-action="digit">6</button>
+        <button class="key key--operator" data-action="subtract">−</button>
+
+        <button class="key" data-action="digit">1</button>
+        <button class="key" data-action="digit">2</button>
+        <button class="key" data-action="digit">3</button>
+        <button class="key key--operator" data-action="add">+</button>
+
+        <button class="key key--span" data-action="digit">0</button>
+        <button class="key" data-action="decimal">.</button>
+        <button class="key key--equal" data-action="equals">=</button>
+      </section>
+      <footer class="calculator__footer">
+        <p>Keyboard friendly • Supports + − × ÷ %</p>
+      </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
